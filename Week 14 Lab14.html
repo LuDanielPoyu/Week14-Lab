@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<p id="demo"></p>
+<script>
+	var sentence;
+	sentence = window.prompt("input data");
+	console.log(sentence);
+	var char;
+	char = window.prompt("input a char to search");
+	var result1 = sentence.indexOf(char);
+	console.log(result1);
+	var result2 = sentence.lastIndexOf(char);
+	console.log(result2);
+	var result3 = sentence.indexOf(char,3);
+	console.log(result3);
+	document.getElementById("demo").innerHTML = result1+"<br>"+result2+"<br>"+result3;
+</script>
+</body>
+</html>
